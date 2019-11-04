@@ -1,0 +1,22 @@
+     1                                  section .data
+     2 00000000 616263646566676869-     	string db "abcdefghijklmn",10,0
+     2 00000009 6A6B6C6D6E0A00     
+     3 00000010 68656C6C6F20736964-     	str1 db "hello sid",0
+     3 00000019 00                 
+     4 0000001A 736964207075637364-     	msg db "sid pucsd",0
+     4 00000023 00                 
+     5                                  section .bss
+     6 00000000 <res 00000004>          	msg1 resd 1
+     7                                  section .text
+     8                                  	global main
+     9                                  main:
+    10 00000000 83F00A                  	xor eax,10
+    11 00000003 83F014                  	xor eax,20
+    12 00000006 83F01E                  	xor eax,30
+    13 00000009 35[10000000]            	xor eax,str1
+    14 0000000E 31DB                    abc: 	xor ebx,ebx
+    15 00000010 EBFC                    	jmp abc
+    16                                  
+    17                                  
+    18                                  
+    19                                  	
